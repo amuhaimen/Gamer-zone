@@ -167,7 +167,7 @@ nav ul li a,
 }
 
 .banner_btn_container a,
-.btn_primary a {
+.gamer_info a {
   text-decoration: none;
   color: #fff;
   font-size: 20px;
@@ -176,18 +176,39 @@ nav ul li a,
   line-height: normal;
   text-transform: uppercase;
 }
+
+.btn_primary:hover a {
+  color: #f948b2;
+}
+
 .btn_primary {
-  border: 0;
+  border: 1px solid transparent;
   border-radius: 48px;
   background: var(
     --Linear,
     linear-gradient(90deg, #ff42a5 13.13%, #ff42a5 87.94%)
   );
   padding: 21px 40px;
+  transition: 1s ease-in-out;
+}
+.btn_primary:hover {
+  border: 1px solid #f948b2;
+  background: #fff;
 }
 
-.light_blue {
+.btn_secondary {
+  border: 1px solid transparent;
+  border-radius: 48px;
   background: #4ec5f7;
+  padding: 21px 40px;
+  transition: 0.5s ease-in-out;
+}
+.btn_secondary:hover {
+  border: 1px solid #4ec5f7;
+  background: #fff;
+}
+.btn_secondary:hover a {
+  color: #4ec5f7;
 }
 
 /* header styles end */
@@ -351,6 +372,86 @@ nav ul li a,
 
 /* play online styles end */
 
+/* Careers styles start */
+
+.career_section {
+  background-color: #ff42a5;
+  background-image: url("/images/Vector-2.png");
+  background-repeat: no-repeat;
+  background-position: top right;
+  margin-top: 240px;
+}
+
+.career_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 100px;
+  padding: 77px 0;
+}
+
+.career_list_container {
+  display: flex;
+  justify-content: space-between;
+}
+.career_list_container ul {
+  padding: 0;
+}
+
+.career_list_container ul li {
+  list-style: none;
+}
+
+.second_list {
+  text-align: right;
+}
+
+.career_container h3 {
+  color: white;
+}
+
+.career_container p {
+  color: #fff;
+}
+
+.career_list_container ul li {
+  color: #fff;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 40px; /* 200% */
+}
+
+.career_btn a {
+  text-decoration: none;
+  color: #ff42a5;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.career_btn {
+  border: 1px solid transparent;
+  padding: 20px 40px;
+  border-radius: 48px;
+  transition: 0.5s ease-in-out;
+  margin-top: 40px;
+}
+
+.career_btn:hover {
+  border: 1px solid white;
+  background-color: #ff42a5;
+  color: #fff;
+}
+
+.career_btn:hover a {
+  color: white;
+}
+
+/* Careers styles end */
+
 /* responsive  */
 /* ====================================== */
 
@@ -438,5 +539,15 @@ nav ul li a,
   .play_online_img_part img {
     width: 100%;
     padding: 30px;
+  }
+  .career_container {
+    flex-direction: column;
+    padding: 50px;
+  }
+  .career_section {
+    background-position: bottom;
+  }
+  .career_container img {
+    width: 100%;
   }
 }
