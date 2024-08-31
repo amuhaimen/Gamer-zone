@@ -452,6 +452,109 @@ nav ul li a,
 
 /* Careers styles end */
 
+/* action styles start */
+.action_container {
+  margin-top: 120px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 27px;
+}
+
+.action_inner_container {
+  display: flex;
+  align-self: center;
+  gap: 16px;
+  border: 1px solid transparent;
+  padding: 10px;
+  transition: 0.5s ease;
+}
+.action_description {
+  color: #0b0223;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.action_inner_container:hover {
+  border: 1px solid #ff42a5;
+  border-radius: 50px;
+}
+.action_inner_container:hover .action_description {
+  color: #ff42a5;
+}
+
+/* action styles end */
+
+footer {
+  margin-top: 120px;
+  background: #0b0223;
+  padding: 120px 0;
+}
+
+.footer_logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.footer_logo h2 {
+  color: #fff;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.footer_logo img {
+  width: 86px;
+  height: 40px;
+}
+
+.footer_container ul li {
+  list-style: none;
+}
+
+.footer_container ul {
+  margin-top: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+}
+
+.footer_first_a {
+  text-decoration: none;
+  color: #fff;
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.footer_third_a,
+.footer_container p {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.6);
+  text-align: center;
+
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.footer_icon {
+  font-size: 40px;
+  color: white;
+}
+
+/* footer styles end */
+
 /* responsive  */
 /* ====================================== */
 
@@ -549,5 +652,15 @@ nav ul li a,
   }
   .career_container img {
     width: 100%;
+  }
+  .action_description {
+    font-size: 16px;
+  }
+
+  .footer_container ul {
+    flex-wrap: wrap;
+  }
+  footer {
+    padding: 120px 50px;
   }
 }
